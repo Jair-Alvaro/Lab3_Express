@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .login-form {
+            background: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px; 
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px #000; 
+        }
+        body {
+            background-color: rgb(60, 60, 60);
+            color: white; 
+        }
+    </style>
+</head>
+    <body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="https://www.wishingwell.es/images_upload/proyectos-web-online.jpg" alt="Imagen" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card login-form h-100">
+                        <h1 class="card-title text-center text-dark">Inicio de Sesión</h1>
+                        <div class="card-body">
+                            <form action="/matriculas" method="post">
+                                <div class="form-group">
+                                    <label for="usuario" class="text-dark">Usuario</label>
+                                    <input type="text" class="form-control" id="usuario" name="usuario" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contrasena" class="text-dark">Contraseña</label>
+                                    <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Ingresar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
